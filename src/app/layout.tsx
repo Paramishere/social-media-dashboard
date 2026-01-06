@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // Added 'font-sans' here to apply the font globally
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
