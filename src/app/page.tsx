@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-// 1. Separate data from UI
+// Data Configuration
 const RESOURCES = [
   {
     href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
@@ -15,7 +15,7 @@ const RESOURCES = [
   },
 ];
 
-// 2. Reusable Component for Links
+// Reusable Component
 const ActionButton = ({ 
   href, 
   label, 
@@ -52,7 +52,6 @@ const ActionButton = ({
 
 export default function Home() {
   return (
-    // Removed redundant outer div; simplified wrapper
     <main className="flex min-h-screen w-full flex-col items-center justify-center bg-zinc-50 py-32 px-4 dark:bg-black sm:px-16">
       <div className="flex w-full max-w-3xl flex-col items-center gap-12 sm:items-start">
         <Image
